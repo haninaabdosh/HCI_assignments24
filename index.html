@@ -1,163 +1,53 @@
 <!DOCTYPE html>
-<html>
-<Title>Directory</Title>
-<a href="logo"><img src="jim's pizza logo.jpg" alt="Logo" width="120" height="120"></a>
+<html lang="en">
+<head>
+  <title>Directory</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+   
+ /* Header styling */
+ header {
+      background-color: goldenrod; 
+      padding: 20px; /* Add padding for spacing */
+      display: flex; /* Use flexbox for layout */
+      justify-content: space-between; /* Space between logo and nav */
+      align-items: center; /* Vertically center nav */
+    }
+
+    .logo img {
+      width: 150px; /* Set logo width */
+      height: 150px; /* Set logo height */
+    }
+    
+  </style>
+</head>
 <body>
-    <!---The following use CSS to add a background image from a source/folder saved on the computer which is centered and automatically resized-->
-    <style>
-        body {
-          background-image: url(pizza.jpeg);
-          background-size: auto;
-          background-position: center;
-        }
-        </style>
-        
-    <h1>Jim's Pizza</h1>
-    <h2>Menu</h2>
-    <table style="border: 1px solid black; border-collapse: collapse; width: 100%;">
-        <!---this creates a table with a black border, merged cell borders, and a width which is the same for the enitre table-->
-        <tr>
-            <td colspan="3" style="text-align: center;"><u>Appetizers</u></td>
-        <!---this creates a table cell that spans 3 columns, has centered text alignment, and contains an underlined text -->
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-        <!--the table row has a 1-pixel solid black border at the bottom.-->
-            <td>
-                <li>Garlic bread</li>
-                <li>Bruschetta</li>
-                <li>Calamari</li>
-                <li>Buffalo wings</li>
-            </td>
-            <td rowspan="3">
-                <ul>
-                  <li>$5.00</li>
-                  <li>$6.00</li>
-                  <li>$8.00</li>
-                  <li>$7.00</li>
-                </br>
-                  <li>$5.00</li>
-                  <li>$6.00</li>
-                  <li>$8.00</li>
-                </ul>
-                <!--The code creates a table cell that spans 3 rows vertically and contains an unordered list of prices for Appetizers and main dishes-->
-              </td>
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-            <td colspan="3"style="text-align: center;"><u>Popular Dishes</u></td>
-            </tr>
-            <td>
-            <li><b>The Yorkshire Pepperoni:</b> <i>Fresh Tomato Sauce, Basil, Freshly Grated Mozzarella, Lishman's Award Winning Pepperoni From Yorkshire</i></li>
-            <li><b>The Plant King:</b> <i>Fresh Tomato Sauce, Basil, Vegan Cheese, Homemade Caramelized Red Onion, Sherry Soaked Mushrooms, Wilted Spinach, Olives, Balsamic Glaze (VE)</i></li>
-            <li><b>Not For The Sheepish:</b> <i> Fresh Tomato Sauce, Basil, Goats Cheese, Homemade Caramelised Red Onion, Balsamic Glaze (V)</i></li>
-            </td>
-            
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-            <td colspan="3"style="text-align: center;"><u>Main Dishes</u></td>
-        </tr>
-        <tr>
-            <td>
-                <li>Cheesy Garlic Bread</li>
-                <li>Margherita</li>
-                <li>Weekly Special</li>
-                <li>Ham, Olive And Mushroom</li>
-            </td>
-            <td>
-                <ul>
-                    <li>$9.00</li>
-                    <li>$10.00</li>
-                    <li>$11.00</li>
-                    <li>$12.00</li>
-                </ul>
-            </td>
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-            <td colspan="3"style="text-align: center;"><u>Drinks</u></td>
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-            <td>
-                <li>Pineapple Smash</li>
-                <li>Hibiscus Sueño</li>
-                <li>Chicha Morada</li>
-            </td>
-            <td>
-                <ul>
-                    <li>$4.00</li>
-                    <li>$5.00</li>
-                    <li>$3.50</li>
-                </ul>
-            </td>
-        </tr>
-        <tr>
-            <td colspan="3"style="text-align: center;"><u>Dessert</u></td>
-        </tr>
-        <tr style="border-bottom: 1px solid black;">
-            <td>
-                <li>Homemade Brownie</li>
-                <li>The Nutty Chocolatier</li>
-            </td>
-            <td>
-                <ul>
-                    <li>$6.00</li>
-                    <li>$7.00</li>
-                </ul>
-            </td>
-        </tr>
-    </table>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="jim's pizza logo.jpg" alt="Jim's Pizza Logo"></a> <!-- Logo link -->
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li><!-- Home link: when clicked, redirects back-->
+        <li><a href="menu.html">Menu</a></li><!-- Menu link: when clicked, redirects to menu page -->
+        <li><a href="catering.html">Catering</a></li><!-- Catering link: when clicked, redirects to catering form request -->  
+        <li><a href="location.html">Location</a></li> <!-- Location link: when clicked, redirects to location page-->
+        <li><a href="contact.html">Contact</a></li><!-- Contact link: when clicked, redirects to contacts page-->
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/T3AHBe0I0yc?si=sd6TPdoQNFqpDc_F&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe> <!-- YouTube video embedded -->
+    </div>
+
+    <p>Jim's Pizza is a cozy neighborhood spot serving up classic Neapolitan-style pizzas since 1992. Established by Jim Smith, who had a passion for authentic Italian cuisine, the pizza quickly gained a reputation for its flavorful pies and welcoming atmosphere. Over the years, Jim's has become a local favorite, attracting generations of families and friends! Enjoy freshly baked pies topped with high-quality ingredients and a variety of unique flavor combinations!</p>
     
-    <h2>Reservations</h2>
-    <form>
-        <label for="fname">First name:</label>
-        <input type="text" name="fname" placeholder="first name">
-        <br>
-    <!---This code creates a form field for entering a first name, including a label to identify the field and a placeholder to provide a hint to the user.-->
-
-        <label for="lname">Last name:</label>
-        <input type="text" name="lname" placeholder="last name">
-        
-        <br>
-
-        <label for="date">Date:</label>
-        <input type="date" name="date">
-        
-        <br>
-
-        <label for="time">Time:</label>
-        <input type="time" name="time">
-       
-        <br>
-
-        <label for="phone">Phone number:</label>
-        <input type="number" name="phone" placeholder="phone number">
-        
-        <br>
-
-        <label for="email">Email:</label>
-        <input type="text" name="email" placeholder="Email">
-        
-        <br>
-
-        <label for="numguests">Number of guests:</label>
-        <input type="number" name="numguests" placeholder="number of guests">
-        
-        <br>
-
-        <label>Dietary restrictions:</label>
-        <input type="radio" name="dietary restrictions" value="vegan"> Vegan
-        <input type="radio" name="dietary restrictions" value="gluten-free"> Gluten-free
-        <input type="radio" name="dietary restrictions" value="peanut allergies"> Peanut allergies
-        <input type="radio" name="dietary restrictions" value="vegetarian"> Vegetarian
-        <input type="radio" name="dietary restrictions" value="kosher"> Kosher
-        <input type="radio" name="dietary restrictions" value="halal"> Halal
-        <!---The code creates a radio button input element for selecting the "Other" option for dietary restrictions. This allows users to select their answer.-->
-        <input type="radio" name="dietary restrictions" value="other"> Other
-    
-        <br>
-
-        <input type="reset">
-        
-        <br>
-
-        <input type="submit">
-    </form>
+    <a href="reservation.html">
+      <label style="cursor: pointer;">Book a Table</label> <!-- Clickable label to book a table-->
+  </section>
 </body>
+</html>

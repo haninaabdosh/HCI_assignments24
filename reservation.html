@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book a Table</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <h1>Book a Table</h1> <!-- Main heading for the reservation form -->
+
+    <form id="reservation.html"> <!-- Form for booking a table -->
+        <label for="fname">First name:</label>
+        <input type="text" name="fname" placeholder="First name"><br> <!-- Input for first name -->
+
+        <label for="lname">Last name:</label>
+        <input type="text" name="lname" placeholder="Last name"><br> <!-- Input for last name -->
+
+        <label for="date">Date:</label>
+        <input type="date" name="date"><br> <!-- Input for selecting a date -->
+
+        <label for="time">Time:</label>
+        <input type="time" name="time"><br> <!-- Input for selecting a time -->
+
+        <label for="phone">Phone number:</label>
+        <input type="number" name="phone" placeholder="Phone number"><br> <!-- Input for phone number -->
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Email"><br> <!-- Input for email -->
+
+        <label for="numguests">Number of guests:</label>
+        <input type="number" name="numguests" placeholder="Number of guests"><br> <!-- Input for number of guests -->
+
+        <label>Dietary restrictions:</label><br> <!-- Options for dietary restrictions -->
+        <input type="radio" name="diet" value="vegan"> Vegan
+        <input type="radio" name="diet" value="gluten-free"> Gluten-free
+        <input type="radio" name="diet" value="nut-allergies"> Nut allergies
+        <input type="radio" name="diet" value="vegetarian"> Vegetarian
+        <input type="radio" name="diet" value="kosher"> Kosher
+        <input type="radio" name="diet" value="halal"> Halal
+        <input type="radio" name="diet" value="other"> Other<br><br> <!-- Radio buttons for dietary options -->
+
+        <input type="reset"><br> <!-- Reset button to clear the form -->
+        <input type="submit"> <!-- Submit button to submit the form -->
+    </form>
+</body>
+</html>

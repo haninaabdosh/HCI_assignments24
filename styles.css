@@ -1,0 +1,124 @@
+/* Basic reset to remove default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*for the hyperlinks like "Menu" in the header*/
+nav {
+    margin-top: 10px; /* Space above the navigation */
+  }
+
+  /* Navigation links styling */
+  .nav-links {
+    list-style: none; /* Remove bullet points from list */
+    display: flex; /* Arrange items horizontally */
+    justify-content: center; /* Center the links */
+    gap: 20px; /* Space between each link */
+  }
+
+  /* Individual link styling */
+  .nav-links li a {
+    text-decoration: none; /* Remove underline from links */
+    color: black; /* Dark text color */
+    font-size: 18px; /* Font size */
+    padding: 10px 15px; /* Add padding for clickable area */
+    background-color: goldenrod; /* Golden background */
+    border-radius: 5px; /* Rounded corners */
+  }
+
+  /* Hover effect for links */
+  .nav-links li a:hover {
+    background-color: black; /* Change background on hover */
+    color: goldenrod; /* Change text color on hover */
+  }
+
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px; /* Add padding inside the body */
+    line-height: 1.6; /* Increase line height for readability */
+    font-size: 20px; /* Base font size */
+    background: linear-gradient(white, #f5f5dc); /* Set gradient background */
+    color: black; 
+}
+
+h1 {
+    color: goldenrod; /* Header color */
+    margin-bottom: 20px; /* Space below header */
+}
+
+h2 {
+    color: goldenrod; /* Subheader color */
+    margin-top: 20px; /* Space above subheaders */
+    margin-bottom: 10px; /* Space below subheaders */
+}
+
+p {
+    margin-bottom: 15px; /* Space below paragraphs */
+}
+
+img {
+    display: block; /* Make images block elements so they don't take up the enitre space*/
+    margin: 20px auto; /* Center images and add spacing above and below */
+    max-width: 100%; /*width of images */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+/* Form for reservations label styling */
+label {
+    font-weight: bold; /* Make labels bold */
+    margin-top: 10px; /* Space above labels */
+    display: block; /* Make labels block elements for proper spacing */
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="number"],
+textarea {
+    width: 100%; /* Make input fields full width */
+    padding: 10px; /* Add padding for comfort */
+    margin-bottom: 20px; /* Space below each input */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Style for submit and reset buttons */
+input[type="submit"],
+input[type="reset"] {
+    background-color: goldenrod; /* Button color */
+    color: white; /* White text */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor when pointing over the label */
+}
+
+/* Style for hyperlinks like Instagram/facebook links */
+a {
+    color: black; /* black color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Styling for "Book a table"*/
+a label {
+    background-color: goldenrod; /* Background color */
+    color: black; /* Text color */
+    padding: 10px 15px; /* Padding for spacing */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor when pointing over the label */
+    display: inline-block;/*limits background to the text*/
+}
+
+/* Hover effect for the label "Book a table"*/
+a label:hover {
+    background-color: darkgoldenrod; /* Darker background when hovering */
+}

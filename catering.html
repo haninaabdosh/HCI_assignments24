@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Catering Services</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+</head>
+<body>
+    <h1>Catering Services</h1> <!-- Main heading for catering services -->
+
+    <p>At Jim's Pizza, we offer catering services for any event. Customize your menu with our Neapolitan-style pizzas, and more. Let us handle the food while you enjoy your event!</p> <!-- Description of catering services -->
+
+    <h2>View Our Menu</h2> <!-- Subheading for menu viewing -->
+    <p>Before submitting your catering request, take a look at our <a href="menu.html">menu</a> to select your dishes and customize your order.</p> <!-- Link to menu page -->
+
+    <h2>Book Catering</h2> <!-- Subheading for booking section -->
+    <form> <!-- Form for booking catering -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required> <!-- Input for customer name -->
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required> <!-- Input for customer email -->
+        <br>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required> <!-- Input for customer phone number -->
+        <br>
+
+        <label for="event-date">Event Date:</label>
+        <input type="date" id="event-date" name="event_date" required> <!-- Input for event date -->
+        <br>
+
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" name="num_guests" required> <!-- Input for number of guests -->
+        <br>
+
+        <label for="message">Requests:</label>
+        <textarea id="message" name="message" rows="15"></textarea> <!-- Textarea for  requests -->
+        <br>
+
+        <input type="submit" value="Submit"> <!-- Submit button for the form -->
+    </form>
+
+    <p><b>Contact us for inquiries:</b> <a href="mailto:catering@jims-pizza.com">catering@jims-pizza.com</a></p> <!-- Contact information for catering inquiries -->
+</body>
+</html>
