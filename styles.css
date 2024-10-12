@@ -33,6 +33,36 @@ nav {
     color: goldenrod; /* Change text color on hover */
   }
 
+/* Floating pizza bubble styling */
+.pizza-bubble {
+    /* Position bubbles at the bottom and make them absolute */
+    position: absolute;
+    bottom: -100px; /* Start below the screen */
+    width: 50px;
+    height: 50px;
+    background-image: url('pizza.png'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: brightness(0.85) contrast(1.2); /* Adjust brightness and contrast */
+    /* Animation to make bubbles float */
+    animation: floatPizza 10s ease-in infinite;
+    opacity: 0.8; /* Slight transparency */
+  }
+  
+  @keyframes floatPizza {
+    0% { transform: translateY(0) scale(1); opacity: 0.8; } /* Starting position */
+    50% { opacity: 1; transform: translateY(-500px) scale(1.2); } /* Middle position */
+    100% { transform: translateY(-1000px) scale(1); opacity: 0; } /* End position */
+  }
+  
+/* Random positions and animation speeds for variety */
+.pizza-bubble:nth-child(1) { left: 10%; animation-duration: 8s; } /* Left of screen */
+.pizza-bubble:nth-child(2) { left: 30%; animation-duration: 12s; } /* Left-center */
+.pizza-bubble:nth-child(3) { left: 50%; animation-duration: 10s; } /* Center */
+.pizza-bubble:nth-child(4) { left: 70%; animation-duration: 14s; } /* Right-center */
+.pizza-bubble:nth-child(5) { left: 90%; animation-duration: 9s; } /* Right of screen */
+  
 
 body {
     font-family: Arial, sans-serif;
@@ -121,4 +151,36 @@ a label {
 /* Hover effect for the label "Book a table"*/
 a label:hover {
     background-color: darkgoldenrod; /* Darker background when hovering */
+}
+
+/* Media query for smaller screens like an iPhone (width <= 768px) */
+@media (max-width: 768px) {
+    header {
+      flex-direction: column; /* Stack items vertically */
+      align-items: center; /* Center items */
+      padding: 10px; /* reduce padding */
+    }
+  
+    .logo img {
+      width: 100px; /* Smaller logo size */
+      height: 100px;
+    }
+  
+    nav ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column; /* Stack nav links vertically */
+      align-items: center;
+      gap: 10px; /* Space between links */
+    }
+  
+    .container {
+      height: 60vh; /* Reduce container height for smaller viewports */
+    }
+  
+    .container iframe {
+      width: 100vw; /* Expand width to full viewport width */
+      height: 60vh; /* Adjust height */
+      transform: none; /* Remove centering transform */
+    }
 }

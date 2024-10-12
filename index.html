@@ -3,7 +3,8 @@
 <head>
   <title>Directory</title>
   <link rel="stylesheet" href="styles.css">
-
+  <!-- Link to the JavaScript file that creates the pizza bubbles on load -->
+  <script src="script.js" defer></script>
   <style>
    
  /* Header styling */
@@ -19,14 +20,33 @@
       width: 150px; /* Set logo width */
       height: 150px; /* Set logo height */
     }
-    
+  
+  /* Full-screen container for the video */
+  .container {
+      position: relative;
+      width: 100%; /* Match the full width of the body */
+      height: 100vh; /* Full height of the viewport */
+      overflow: hidden; /* Hide overflow */
+      margin: 0; /* Remove default margins */
+    }
+
+    .container iframe {
+      position: absolute; /* Position absolutely within the container */
+      top: 50%; /* Center vertically */
+      left: 50%; /* Center horizontally */
+      width: 100%; /* Full width of the container */
+      height: 100%; /* Full height of the container */
+      transform: translate(-50%, -50%); /* Center the iframe */
+      border: none; /* Remove iframe border */
+      
+    }
+
   </style>
 </head>
 <body>
   <header>
     <div class="logo">
-      <a href="index.html" target="_blank">
-        <img src="jim's pizza logo.jpg" alt="Jim's Pizza Logo"></a> <!-- Logo link -->
+      <a href="index.html"><img src="jim's pizza logo.jpg" alt="Jim's Pizza Logo"></a> <!-- Logo link -->
     </div>
     <nav>
       <ul class="nav-links">
@@ -41,8 +61,14 @@
 
   <section>
     <div class="container">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/T3AHBe0I0yc?si=sd6TPdoQNFqpDc_F&autoplay=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe> <!-- YouTube video embedded -->
+      <iframe 
+        src="https://www.youtube.com/embed/T3AHBe0I0yc?autoplay=1&loop=1&playlist=T3AHBe0I0yc" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+      </iframe>
+      <!-- YouTube video embedded -->
     </div>
 
     <p>Jim's Pizza is a cozy neighborhood spot serving up classic Neapolitan-style pizzas since 1992. Established by Jim Smith, who had a passion for authentic Italian cuisine, the pizza quickly gained a reputation for its flavorful pies and welcoming atmosphere. Over the years, Jim's has become a local favorite, attracting generations of families and friends! Enjoy freshly baked pies topped with high-quality ingredients and a variety of unique flavor combinations!</p>
