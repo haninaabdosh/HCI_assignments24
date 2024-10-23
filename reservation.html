@@ -1,45 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Table</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Book a Table</h1> <!-- Main heading for the reservation form -->
+    <div class="container mt-5">
+        <h1 class="text-center">Book a Table</h1>
+        <form id="reservation" class="mt-4">
+            <div class="form-group">
+                <label for="fname">First name:</label>
+                <input type="text" class="form-control" id="fname" name="fname" placeholder="First name" required>
+            </div>
 
-    <form id="reservation.html"> <!-- Form for booking a table -->
-        <label for="fname">First name:</label>
-        <input type="text" name="fname" placeholder="First name"><br> <!-- Input for first name -->
+            <div class="form-group">
+                <label for="lname">Last name:</label>
+                <input type="text" class="form-control" id="lname" name="lname" placeholder="Last name" required>
+            </div>
 
-        <label for="lname">Last name:</label>
-        <input type="text" name="lname" placeholder="Last name"><br> <!-- Input for last name -->
+            <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="date" name="date" placeholder="MM/DD/YYYY" required>
+            </div>
 
-        <label for="date">Date:</label>
-        <input type="date" name="date"><br> <!-- Input for selecting a date -->
+            <div class="form-group">
+                <label for="time">Time:</label>
+                <input type="time" class="form-control" id="time" name="time" placeholder="HH:MM" required>
+            </div>
 
-        <label for="time">Time:</label>
-        <input type="time" name="time"><br> <!-- Input for selecting a time -->
+            <div class="form-group">
+                <label for="phone">Phone number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone number" required>
+            </div>
 
-        <label for="phone">Phone number:</label>
-        <input type="number" name="phone" placeholder="Phone number"><br> <!-- Input for phone number -->
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+            </div>
 
-        <label for="email">Email:</label>
-        <input type="text" name="email" placeholder="Email"><br> <!-- Input for email -->
+            <div class="form-group">
+                <label for="numguests">Number of guests:</label>
+                <input type="number" class="form-control" id="numguests" name="numguests" placeholder="Number of guests" required>
+            </div>
 
-        <label for="numguests">Number of guests:</label>
-        <input type="number" name="numguests" placeholder="Number of guests"><br> <!-- Input for number of guests -->
+            <label>Dietary restrictions:</label><br>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="vegan" required> Vegan
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="gluten-free"> Gluten-free
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="nut-allergies"> Nut allergies
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="vegetarian"> Vegetarian
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="kosher"> Kosher
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="halal"> Halal
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" name="diet" value="other"> Other
+            </div>
 
-        <label>Dietary restrictions:</label><br> <!-- Options for dietary restrictions -->
-        <input type="radio" name="diet" value="vegan"> Vegan
-        <input type="radio" name="diet" value="gluten-free"> Gluten-free
-        <input type="radio" name="diet" value="nut-allergies"> Nut allergies
-        <input type="radio" name="diet" value="vegetarian"> Vegetarian
-        <input type="radio" name="diet" value="kosher"> Kosher
-        <input type="radio" name="diet" value="halal"> Halal
-        <input type="radio" name="diet" value="other"> Other<br><br> <!-- Radio buttons for dietary options -->
+            <div class="mt-3">
+                <input type="reset" class="btn btn-secondary" value="Reset">
+                <input type="submit" class="btn btn-primary" value="Submit">
+            </div>
+        </form>
+    </div>
 
-        <input type="reset"><br> <!-- Reset button to clear the form -->
-        <input type="submit"> <!-- Submit button to submit the form -->
-    </form>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

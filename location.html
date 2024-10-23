@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
     <title>Our Location</title> <!-- Title of the page -->
+    
+    <!-- Link to Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> 
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <h1>Location</h1> <!-- Main heading for location information -->
-    
-    <p><b>Address:</b> 5 Frances St, London SE18 5EF, United Kingdom</p> <!-- Physical address of Jim's Pizza -->
-    
-    <p>Jim's Pizza is located in a beautiful outdoor setting in the heart of the town center. You can enjoy a relaxing pizza experience while being surrounded by the lively atmosphere of local shops and cafes. The town center offers a wide variety of stores for shopping, including local boutiques, grocery markets, and more. It's a perfect spot for a day out with family and friends.</p> <!-- Description of the restaurant's location and atmosphere -->
+    <div class="container"> <!-- Bootstrap container for responsive layout -->
+        <h1 class="mt-4">Location</h1> <!-- Main heading with top margin -->
+        
+        <p><strong>Address:</strong> 5 Frances St, London SE18 5EF, United Kingdom</p> <!-- Physical address of Jim's Pizza -->
+        
+        <p>Jim's Pizza is located in a beautiful outdoor setting in the heart of the town center. You can enjoy a relaxing pizza experience while being surrounded by the lively atmosphere of local shops and cafes. The town center offers a wide variety of stores for shopping, including local boutiques, grocery markets, and more. It's a perfect spot for a day out with family and friends.</p> <!-- Description of the restaurant's location and atmosphere -->
 
-    <h2>Our beautiful outdoor area in the town center</h2> <!-- Subheading for outdoor area description -->
-    <img src="outdoor.jpg" alt="Outdoor Pizza Restaurant" width="500" height="330"> <!-- Image of the outdoor restaurant -->
-    <img src="town centre.jpg" alt="Town Center" width="500"> <!-- Image of the town center -->
+        <h2 class="mt-4">Our Beautiful Outdoor Area in the Town Center</h2> <!-- Subheading with top margin -->
+        
+        <div class="row"> <!-- Bootstrap row for layout -->
+            <div class="col-md-6"> <!-- Column for the first image -->
+                <img src="outdoor.jpg" alt="Outdoor Pizza Restaurant" class="img-fluid" width="500" height="330"> <!-- Image of the outdoor restaurant -->
+            </div>
+            <div class="col-md-6"> <!-- Column for the second image -->
+                <img src="town centre.jpg" alt="Town Center" class="img-fluid" width="500"> <!-- Image of the town center -->
+            </div>
+        </div>
+    </div>
 
+    <!-- Optional: Include Bootstrap JS and jQuery for interactive components if needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+
+
 

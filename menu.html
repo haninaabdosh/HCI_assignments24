@@ -1,82 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Menu</title>
+    <meta charset="UTF-8"> <!-- Character encoding for the document -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive design for mobile devices -->
+    <title>Menu</title> <!-- Title of the page -->
+
+    <!-- Link to Bootstrap CSS for styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
     <style>
-/* Reset basic styling for uniformity across browsers */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+        /* Reset basic styling for uniformity across browsers */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /* Makes width and height include padding and border */
+        }
 
-/* Body styling for background and font */
-body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(white, #f5f5dc); /* Gradient background from white to beige */
-  color: black; /* Standard black text color */
-  padding: 20px;
-}
+        /* Body styling for background and font */
+        body {
+            font-family: Arial, sans-serif; /* Font family for the entire page */
+            background: linear-gradient(white, #f5f5dc); /* Gradient background from white to beige */
+            color: black; /* Standard black text color */
+            padding: 20px; /* Padding around the body */
+        }
 
-/* Navigation bar styling */
-nav {
-  background-color: goldenrod; /* Goldenrod background for nav bar */
-  padding: 15px;
-  text-align: center; /* Center-align navigation links */
-}
+        /* Navigation bar styling */
+        nav {
+            background-color: goldenrod; /* Goldenrod background for nav bar */
+            padding: 15px; /* Padding inside the nav bar */
+            text-align: center; /* Center-align navigation links */
+        }
 
-/* Style for navigation links */
-nav a {
-  color: black; /* Black text color for links */
-  margin: 0 15px; /* Margin between links */
-  text-decoration: none; /* Remove underline */
-  font-size: 18px; /* Text size */
-  padding: 10px;
-}
+        /* Style for navigation links */
+        nav a {
+            color: black; /* Black text color for links */
+            margin: 0 15px; /* Margin between links */
+            text-decoration: none; /* Remove underline */
+            font-size: 18px; /* Text size */
+            padding: 10px; /* Padding around links */
+        }
 
-/* Styling for headings */
-h2, h4 {
-  color: goldenrod; /* Goldenrod color for headings */
-  margin-top: 20px;
-  text-align: center;
-}
+        /* Styling for section headings */
+        h4 {
+            color: goldenrod; /* Goldenrod color for headings */
+            margin-top: 20px; /* Space above headings */
+        }
 
-/* Form styling */
-form {
-  margin: 20px 0; /* Margin for space around form */
-}
+        /* Form styling */
+        form {
+            margin: 20px 0; /* Margin for space around form */
+        }
 
-/* Label styling for form fields */
-label {
-  font-size: 18px; /* Larger text for labels */
-}
+        /* Label styling for form fields */
+        label {
+            font-size: 18px; /* Larger text for labels */
+        }
 
-/* Ordered list styling */
-ol, dl {
-  margin-left: 20px; /* Left margin for better spacing */
-}
+        /* Styling for ordered lists */
+        ol {
+            margin-left: 20px; /* Left margin for better spacing */
+        }
 
-/* Definition term styling for menu items */
-dt {
-  font-weight: bold; /* Bold text for terms */
-  margin-top: 10px;
-}
+        /* Definition term styling for menu items */
+        dt {
+            font-weight: bold; /* Bold text for terms */
+            margin-top: 10px; /* Space above definition terms */
+        }
 
-/* Definition description styling */
-dd {
-  margin-bottom: 15px; /* Space below description */
-  font-style: italic; /* Italic text for descriptions */
-}
-
-/* Ordered list for general lists */
-ol {
-  list-style: decimal inside; /* Decimal numbering for ordered lists */
-  margin-bottom: 20px; /* Space below list */
-}
-
+        /* Definition description styling */
+        dd {
+            margin-bottom: 15px; /* Space below description */
+            font-style: italic; /* Italic text for descriptions */
+        }
     </style>
 </head>
 <body>
+    <!-- Navigation bar -->
     <nav>
         <!-- Navigation links to different sections of the menu -->
         <a href="#appetizers">Appetizers</a>
@@ -84,50 +83,52 @@ ol {
         <a href="#main-dishes">Main Dishes</a>
         <a href="#drinks">Drinks</a>
         <a href="#dessert">Dessert</a>
-      </nav>
+    </nav>
     
-      <!-- Appetizers Section -->
-      <h4><a id="appetizers"><u>Appetizers</u></a></h4>
-      <ol>
+    <!-- Appetizers Section -->
+    <h4 id="appetizers"><u>Appetizers</u></h4> <!-- Link to the Appetizers section -->
+    <ol>
         <li>Garlic bread</li>
         <li>Bruschetta</li>
         <li>Calamari</li>
         <li>Buffalo wings</li>
-      </ol>
-    
-      <!-- Popular Dishes Section -->
-      <h4><a id="popular-dishes"><u>Popular dishes</u></a></h4>
-      <dl>
+    </ol>
+
+    <!-- Popular Dishes Section -->
+    <h4 id="popular-dishes"><u>Popular Dishes</u></h4> <!-- Link to the Popular Dishes section -->
+    <dl>
         <dt><b>The Yorkshire Pepperoni:</b></dt>
-        <dd><i>Fresh Tomato Sauce, Basil, Freshly Grated Mozzarella, Lishman's Awarding Winning Pepperoni From Yorkshire</i></dd>
+        <dd><i>Fresh Tomato Sauce, Basil, Freshly Grated Mozzarella, Lishman's Award Winning Pepperoni From Yorkshire</i></dd>
+        
         <dt><b>The Plant King:</b></dt>
         <dd><i>Fresh Tomato Sauce, Basil, Vegan Cheese, Homemade Caramelized Red Onion, Sherry Soaked Mushrooms, Wilted Spinach, Olives, Balsamic Glaze (VE)</i></dd>
+        
         <dt><b>Not For The Sheepish:</b></dt>
         <dd><i>Fresh Tomato Sauce, Basil, Goats Cheese, Homemade Caramelised Red Onion, Balsamic Glaze (V)</i></dd>
-      </dl>
+    </dl>
+
+    <!-- Main Dishes Section -->
+    <h4 id="main-dishes"><u>Main Dishes</u></h4> <!-- Link to the Main Dishes section -->
+    <ol>
+        <li>Cheesy Garlic Bread</li>
+        <li>Margherita</li>
+        <li>Weekly Special</li>
+        <li>Ham, Olive And Mushroom</li>
+    </ol>
     
-      <!-- Main Dishes Section -->
-      <h4><a id="main-dishes"><u>Main Dishes</u></a></h4>
-        <ol>
-          <li>Cheesy Garlic Bread</li>
-          <li>Margherita</li>
-          <li>Weekly Special</li>
-          <li>Ham, Olive And Mushroom</li>
-        </ol>
-      
-        <!-- Drinks Section -->
-        <h4><a id="drinks"><u>Drinks</u></a></h4>
-        <ol>
-          <li>Pineapple Smash</li>
-          <li>Hibiscus Sueño</li>
-          <li>Chicha Morada</li>
-        </ol>
-      
-        <!-- Dessert Section -->
-        <h4><a id="dessert"><u>Dessert</u></a></h4>
-        <ol>
-          <li>Homemade Brownie</li>
-          <li>The Nutty Chocolatier</li>
-        </ol>    
+    <!-- Drinks Section -->
+    <h4 id="drinks"><u>Drinks</u></h4> <!-- Link to the Drinks section -->
+    <ol>
+        <li>Pineapple Smash</li>
+        <li>Hibiscus Sueño</li>
+        <li>Chicha Morada</li>
+    </ol>
+    
+    <!-- Dessert Section -->
+    <h4 id="dessert"><u>Dessert</u></h4> <!-- Link to the Dessert section -->
+    <ol>
+        <li>Homemade Brownie</li>
+        <li>The Nutty Chocolatier</li>
+    </ol>    
 </body>
 </html>

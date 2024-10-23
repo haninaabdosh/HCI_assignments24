@@ -2,14 +2,13 @@
 <html lang="en">
 <head>
   <title>Directory</title>
-  <link rel="stylesheet" href="styles.css">
-  <!-- Link to the JavaScript file that creates the pizza bubbles on load -->
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Link to Bootstrap CSS -->
+  <script src="script.js" defer></script> <!-- Link to the JavaScript file that creates the pizza bubbles on load -->
   <style>
-   
- /* Header styling */
- header {
-      background-color: goldenrod; 
+    /* Header styling */
+    header {
+      background-color: goldenrod; /* Background color of the header */
       padding: 20px; /* Add padding for spacing */
       display: flex; /* Use flexbox for layout */
       justify-content: space-between; /* Space between logo and nav */
@@ -20,10 +19,10 @@
       width: 150px; /* Set logo width */
       height: 150px; /* Set logo height */
     }
-  
-  /* Full-screen container for the video */
-  .container {
-      position: relative;
+
+    /* Full-screen container for the video */
+    .container {
+      position: relative; /* Positioning context for the iframe */
       width: 100%; /* Match the full width of the body */
       height: 100vh; /* Full height of the viewport */
       overflow: hidden; /* Hide overflow */
@@ -38,9 +37,7 @@
       height: 100%; /* Full height of the container */
       transform: translate(-50%, -50%); /* Center the iframe */
       border: none; /* Remove iframe border */
-      
     }
-
   </style>
 </head>
 <body>
@@ -49,18 +46,18 @@
       <a href="index.html"><img src="jim's pizza logo.jpg" alt="Jim's Pizza Logo"></a> <!-- Logo link -->
     </div>
     <nav>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li><!-- Home link: when clicked, redirects back-->
-        <li><a href="menu.html">Menu</a></li><!-- Menu link: when clicked, redirects to menu page -->
-        <li><a href="catering.html">Catering</a></li><!-- Catering link: when clicked, redirects to catering form request -->  
-        <li><a href="location.html">Location</a></li> <!-- Location link: when clicked, redirects to location page-->
-        <li><a href="contact.html">Contact</a></li><!-- Contact link: when clicked, redirects to contacts page-->
+      <ul class="nav-links d-flex"> <!-- Bootstrap class d-flex to enable flexbox for horizontal navigation -->
+        <li class="mr-3"><a href="index.html">Home</a></li> <!-- Home link: when clicked, redirects back-->
+        <li class="mr-3"><a href="menu.html">Menu</a></li> <!-- Menu link: when clicked, redirects to menu page -->
+        <li class="mr-3"><a href="catering.html">Catering</a></li> <!-- Catering link: when clicked, redirects to catering form request -->
+        <li class="mr-3"><a href="location.html">Location</a></li> <!-- Location link: when clicked, redirects to location page -->
+        <li><a href="contact.html">Contact</a></li> <!-- Contact link: when clicked, redirects to contacts page -->
       </ul>
     </nav>
   </header>
 
-  <section>
-    <div class="container">
+  <section class="container mt-4"> <!-- Bootstrap class to add top margin -->
+    <div class="container"> <!-- Bootstrap container for responsive layout -->
       <iframe 
         src="https://www.youtube.com/embed/T3AHBe0I0yc?autoplay=1&loop=1&playlist=T3AHBe0I0yc" 
         title="YouTube video player" 
@@ -73,8 +70,12 @@
 
     <p>Jim's Pizza is a cozy neighborhood spot serving up classic Neapolitan-style pizzas since 1992. Established by Jim Smith, who had a passion for authentic Italian cuisine, the pizza quickly gained a reputation for its flavorful pies and welcoming atmosphere. Over the years, Jim's has become a local favorite, attracting generations of families and friends! Enjoy freshly baked pies topped with high-quality ingredients and a variety of unique flavor combinations!</p>
     
-    <a href="reservation.html">
-      <label style="cursor: pointer;">Book a Table</label> <!-- Clickable label to book a table-->
+    <a href="reservation.html" class="btn btn-primary">Book a Table</a> <!-- Bootstrap button for booking a table -->
+    <!-- Using Bootstrap's button styling for a more appealing appearance -->
   </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery for Bootstrap components -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Popper.js for tooltip positioning -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS for interactivity -->
 </body>
 </html>
