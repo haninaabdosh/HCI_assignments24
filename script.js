@@ -1,18 +1,60 @@
-// Function to create and add floating pizza bubbles to the page
-function createPizzaBubbles() {
-    // Create a container to hold the bubbles
-    const bubbleContainer = document.createElement('div');
-    
-    // Generate 5 pizza bubbles
-    for (let i = 0; i < 5; i++) {
-      const bubble = document.createElement('div');  // Create a new bubble
-      bubble.classList.add('pizza-bubble');          // Assign bubble styling class
-      bubbleContainer.appendChild(bubble);           // Add bubble to container
+$(document).ready(function () {
+    // Applying the error class if the input exceeds 10
+    $(".number").on("blur", function () {
+        const value = $(this).val();
+        if (value && value.length > 10) {
+            $(this).addClass("error");
+        } else {
+            $(this).removeClass("error");
+        }
+    });
+
+    // Function to perform the operation
+    function calculate(operation) {
+        const num1 = parseFloat($("#num1").val());
+        const num2 = parseFloat($("#num2").val());
+
+        if (isNaN(num1) || isNaN(num2)) {
+            $("#result").text("Please enter valid numbers.");
+            return;
+        }
+
+        let result;
+        switch (operation) {
+            case "add":
+                result = num1 + num2;
+                break;
+            case "subtract":
+                result = num1 - num2;
+                break;
+            case "multiply":
+                result = num1 * num2;
+                break;
+            case "divide":
+                if (num2 === 0) {
+                    $("#result").text("Cannot divide by zero.");
+                    return;
+                }
+                result = num1 / num2;
+                break;
+        }
+        $("#result").text(`Result: ${result}`);
     }
-  
-    // Append the container of bubbles to the body
-    document.body.appendChild(bubbleContainer);
-  }
-  
-  // Run the function to add bubbles when the page loads
-  window.onload = createPizzaBubbles;
+
+    // Event listeners for the buttons
+    $("#add").on("click", function () {
+        calculate("add");
+    });
+
+    $("#subtract").on("click", function () {
+        calculate("subtract");
+    });
+
+    $("#multiply").on("click", function () {
+        calculate("multiply");
+    });
+
+    $("#divide").on("click", function () {
+        calculate("divide");
+    });
+});

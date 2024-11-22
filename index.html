@@ -1,81 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Directory</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> <!-- Link to Bootstrap CSS -->
-  <script src="script.js" defer></script> <!-- Link to the JavaScript file that creates the pizza bubbles on load -->
-  <style>
-    /* Header styling */
-    header {
-      background-color: goldenrod; /* Background color of the header */
-      padding: 20px; /* Add padding for spacing */
-      display: flex; /* Use flexbox for layout */
-      justify-content: space-between; /* Space between logo and nav */
-      align-items: center; /* Vertically center nav */
-    }
-
-    .logo img {
-      width: 150px; /* Set logo width */
-      height: 150px; /* Set logo height */
-    }
-
-    /* Full-screen container for the video */
-    .container {
-      position: relative; /* Positioning context for the iframe */
-      width: 100%; /* Match the full width of the body */
-      height: 100vh; /* Full height of the viewport */
-      overflow: hidden; /* Hide overflow */
-      margin: 0; /* Remove default margins */
-    }
-
-    .container iframe {
-      position: absolute; /* Position absolutely within the container */
-      top: 50%; /* Center vertically */
-      left: 50%; /* Center horizontally */
-      width: 100%; /* Full width of the container */
-      height: 100%; /* Full height of the container */
-      transform: translate(-50%, -50%); /* Center the iframe */
-      border: none; /* Remove iframe border */
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Assignment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="jim's pizza logo.jpg" alt="Jim's Pizza Logo"></a> <!-- Logo link -->
+    <h2>jQuery Operations</h2>
+    <div>
+        <label>Number 1:</label>
+        <input type="text" id="num1" class="number">
     </div>
-    <nav>
-      <ul class="nav-links d-flex"> <!-- Bootstrap class d-flex to enable flexbox for horizontal navigation -->
-        <li class="mr-3"><a href="index.html">Home</a></li> <!-- Home link: when clicked, redirects back-->
-        <li class="mr-3"><a href="menu.html">Menu</a></li> <!-- Menu link: when clicked, redirects to menu page -->
-        <li class="mr-3"><a href="catering.html">Catering</a></li> <!-- Catering link: when clicked, redirects to catering form request -->
-        <li class="mr-3"><a href="location.html">Location</a></li> <!-- Location link: when clicked, redirects to location page -->
-        <li><a href="contact.html">Contact</a></li> <!-- Contact link: when clicked, redirects to contacts page -->
-      </ul>
-    </nav>
-  </header>
-
-  <section class="container mt-4"> <!-- Bootstrap class to add top margin -->
-    <div class="container"> <!-- Bootstrap container for responsive layout -->
-      <iframe 
-        src="https://www.youtube.com/embed/T3AHBe0I0yc?autoplay=1&loop=1&playlist=T3AHBe0I0yc" 
-        title="YouTube video player" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-      </iframe>
-      <!-- YouTube video embedded -->
+    <div>
+        <label>Number 2:</label>
+        <input type="text" id="num2" class="number">
     </div>
-
-    <p>Jim's Pizza is a cozy neighborhood spot serving up classic Neapolitan-style pizzas since 1992. Established by Jim Smith, who had a passion for authentic Italian cuisine, the pizza quickly gained a reputation for its flavorful pies and welcoming atmosphere. Over the years, Jim's has become a local favorite, attracting generations of families and friends! Enjoy freshly baked pies topped with high-quality ingredients and a variety of unique flavor combinations!</p>
-    
-    <a href="reservation.html" class="btn btn-primary">Book a Table</a> <!-- Bootstrap button for booking a table -->
-    <!-- Using Bootstrap's button styling for a more appealing appearance -->
-  </section>
-
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> <!-- jQuery for Bootstrap components -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> <!-- Popper.js for tooltip positioning -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Bootstrap JS for interactivity -->
+    <div>
+        <button id="add">+</button>
+        <button id="subtract">-</button>
+        <button id="multiply">×</button>
+        <button id="divide">÷</button>
+    </div>
+    <div class="result" id="result"></div>
 </body>
 </html>
